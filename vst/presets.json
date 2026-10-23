@@ -1,0 +1,10 @@
+{
+  "_comment": "Listed in MPC's PRESET menu. Only the display settings; FREEZE is left out on purpose (a preset never freezes the display).",
+  "presets": [
+    {"name": "STAGE",        "values": {"rate": "8 FPS",  "view": "L+R", "mode": "ANALYZER",  "react": 200, "top": 0,  "range": "50 DB", "tilt": "PINK",   "fft": "4096"}},
+    {"name": "STAGE FAST",   "values": {"rate": "12 FPS", "view": "L+R", "mode": "ANALYZER",  "react": 80,  "top": 0,  "range": "40 DB", "tilt": "PINK",   "fft": "2048"}},
+    {"name": "CALM",         "values": {"rate": "4 FPS",  "view": "L+R", "mode": "ANALYZER",  "react": 700, "top": 0,  "range": "50 DB", "tilt": "PINK",   "fft": "4096"}},
+    {"name": "MASTER CHECK", "values": {"rate": "4 FPS",  "view": "L+R", "mode": "MASTERING", "react": 500, "top": -6, "range": "40 DB", "tilt": "4.5 DB", "fft": "8192"}},
+    {"name": "SIDE CHECK",   "values": {"rate": "4 FPS",  "view": "SIDE", "mode": "ANALYZER", "react": 400, "top": -6, "range": "50 DB", "tilt": "PINK",   "fft": "4096"}}
+  ]
+}

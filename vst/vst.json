@@ -1,0 +1,14 @@
+{
+  "name": "Spectrum",
+  "vendor": "lunarscraper",
+  "uid": "SpAn",
+  "version": 1000,
+  "so": "spectrum.so",
+  "params": "params.json",
+  "presets": "presets.json",
+  "layout": "layout.conf",
+  "title_font": "fonts/TitilliumWeb-SemiBold.ttf",
+  "skin_post": "skin_post.py",
+  "effect": true,
+  "_comment": "Insert effect: LSP Spectrum Analyzer (stereo) shown as 31 third-octave bars; audio passes through. vst.json/params.json/presets.json/layout.conf feed mpc-vst-plugins' tools/gen_vst.py for params.h + the skin, skin_post.py adds the bars. The plugin is spectrum_vst.cpp + fxshell.h (float audio), built by this port's own build.sh. params.json: append only (params.lock)."
+}

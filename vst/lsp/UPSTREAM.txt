@@ -1,0 +1,10 @@
+# LSP repositories vendored into lsp-vendor.tar.gz, at these commits (github.com/lsp-plugins/<repo>).
+# The library versions are the ones lsp-plugins-spectrum-analyzer 1.0.41 asks for (its modules.mk).
+lsp-common-lib                  33523b493988e41dfb6c49e53282f73fdd353f3c
+lsp-dsp-lib                     6a4d5ba7a42378ab614129f05de6bd7a1afccc2f
+lsp-dsp-units                   8dd2a6905ca7ccefd2c3624560235680cb8761e2
+lsp-lltl-lib                    97fe208f033ca9f440c4ffa21628b5f8779dfadc
+lsp-plugin-fw                   45f2e23ba809c9661a425484db37367239f57556
+lsp-plugins-shared              a8017348d540774abe23b23812c0897bbded76d9
+lsp-runtime-lib                 69718fe9026a33a378fff0aa890e1571b1035cac
+lsp-plugins-spectrum-analyzer   edaa5e4e77c5bad92c85f725f06cac344fd58014
