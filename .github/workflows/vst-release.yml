@@ -1,0 +1,30 @@
+name: VST release (draft)
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version, e.g. 0.1.0
+        required: true
+        default: 0.1.0
+      dry_run:
+        description: Build only (zip + skin previews as run artifacts), no draft release
+        type: boolean
+        default: true
+
+jobs:
+  spectrum:
+    uses: sd88me/mpc-vst-plugins/.github/workflows/vst-release.yml@10ffa29494e1f9ebb30907abadf7f66c73734d69
+    permissions:
+      contents: write
+    with:
+      tag: spectrum-vst-v${{ inputs.version }}
+      version: ${{ inputs.version }}
+      tools_ref: 10ffa29494e1f9ebb30907abadf7f66c73734d69
+      vst_dir: vst
+      build: bash vst/build.sh
+      host_test: bash vst/test.sh
+      plugin_id: spectrum
+      license: LGPL-3.0-or-later
+      about: Spectrum (insert effect) - 31 third-octave bars on the MPC screen from the unchanged LSP Spectrum Analyzer; audio passes through untouched. Test version of the display. Unofficial port.
+      dry_run: ${{ inputs.dry_run }}
